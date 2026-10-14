@@ -1,0 +1,154 @@
+/* Page layouts, editorial additions and homepage summaries */
+.page-hero{background:linear-gradient(120deg,#f5f9fc,#e9f2f9);border-bottom:1px solid #dce7ef;padding:48px 0 53px}
+.page-hero .breadcrumb{font-size:12px;color:#5f788e;margin:0 0 20px}
+.page-hero .breadcrumb a{font-weight:700;text-decoration:none}
+.page-hero h1{font-size:clamp(36px,4.7vw,56px);line-height:1.14;letter-spacing:-.048em;color:var(--navy);margin:8px 0 15px;font-weight:780}
+.page-hero>div>p:last-child{max-width:810px;line-height:1.8;color:#536b7c;font-size:16px;margin:0}
+.text-link{display:inline-flex;align-items:center;gap:7px;font-size:13px;font-weight:750;text-decoration:none;line-height:1.5;padding:8px 0}
+.text-link:hover{text-decoration:underline}
+.text-link .icon{width:15px;height:15px}
+.section-action{margin-top:25px}
+.compact-contact{padding:55px 0}
+.compact-contact-row{display:flex;gap:25px;align-items:center;justify-content:space-between}
+.compact-contact-row h2{font-size:clamp(24px,2.7vw,33px);color:var(--navy);margin:0 0 5px;line-height:1.3;letter-spacing:-.025em}
+.compact-contact-row p{margin:0;color:var(--muted);font-size:13.5px}
+.compact-contact-row .btn{white-space:nowrap}
+.objectives-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.objectives-grid article{border:1px solid var(--line);background:#fff;border-top:3px solid #7aa8c9;border-radius:4px;padding:26px}
+.objectives-grid article>b{font-size:11px;letter-spacing:.08em;color:#337aaf;text-transform:uppercase;display:block;margin-bottom:9px}
+.objectives-grid h3{font-size:19px;color:var(--navy);letter-spacing:-.025em;line-height:1.45;margin:0 0 9px}
+.objectives-grid p{font-size:13.5px;color:var(--muted);line-height:1.8;margin:0}
+.wide-prose{max-width:950px}
+.demo-teasers{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.demo-teasers>div{border:1px solid var(--line);background:#fff;padding:20px;border-radius:4px}
+.demo-teasers b{color:var(--navy);font-size:14px}
+.demo-teasers p{color:var(--muted);font-size:12.5px;line-height:1.7;margin:6px 0 0}
+.home-lead{border:1px solid var(--line);border-left:4px solid var(--blue);display:flex;gap:23px;align-items:center;padding:22px 27px;background:#f7fbfe;border-radius:5px}
+.home-lead>img:first-child{width:110px;height:110px;object-fit:cover;object-position:top center;background:#fff;border-radius:4px;border:1px solid var(--line)}
+.home-lead>div{flex:1;min-width:0}
+.home-lead h3{font-size:26px;margin:0 0 2px;color:var(--navy);letter-spacing:-.035em;line-height:1.22}
+.home-lead strong{font-size:14px;color:#286b9e}
+.home-lead p{font-size:13px;color:#526b7e;margin:6px 0 2px}
+.home-lead .section-kicker{margin-bottom:8px}
+.home-lead-logo{max-width:200px;max-height:83px;object-fit:contain}
+.home-partners{margin-top:25px}
+.home-partners>p{text-transform:uppercase;letter-spacing:.1em;color:#426e8d;font-weight:800;font-size:11px;margin:0 0 10px}
+.home-partner-names{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.home-partner-names span{border:1px solid var(--line);background:#fff;border-radius:3px;min-height:48px;padding:9px 10px;color:#445f73;font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center;text-align:center}
+.use-detail-list{display:grid;gap:18px}
+.use-detail-list>article{background:#fff;border:1px solid var(--line);border-radius:4px;padding:22px 26px;display:grid;grid-template-columns:94px 1fr;gap:13px}
+.use-detail-list article>span{color:#3079ae;font-weight:800;letter-spacing:.08em;font-size:11px;padding-top:5px}
+.use-detail-list h3{font-size:19px;color:var(--navy);letter-spacing:-.015em;margin:0 0 9px;line-height:1.35}
+.use-detail-list p{font-size:13.5px;line-height:1.85;color:var(--muted);margin:0}
+/* Allow existing section cards to be reused on dedicated pages. */
+#research.section-soft + .section,#use-cases.section + .section-soft{border-top:0}
+@media(max-width:960px){
+ .home-partner-names{grid-template-columns:repeat(3,minmax(0,1fr))}
+ .home-lead-logo{max-width:145px}
+}
+@media(max-width:720px){
+ .page-hero{padding:32px 0 37px}.page-hero h1{font-size:36px}
+ .objectives-grid,.demo-teasers{grid-template-columns:1fr}
+ .home-partner-names{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .home-lead{gap:15px;padding:17px}.home-lead>img:first-child{width:79px;height:90px}.home-lead-logo{display:none}
+ .home-lead h3{font-size:21px}.home-lead strong{font-size:12.5px}
+ .compact-contact-row{align-items:flex-start;flex-direction:column}
+ .use-detail-list>article{grid-template-columns:1fr;gap:2px}
+}
+@media(max-width:420px){.home-partner-names{grid-template-columns:1fr}.page-hero h1{font-size:31px}}
+
+/* Detailed NSF-style task register — collapsible for scanability. */
+.work-package-jumps{display:flex;flex-wrap:wrap;gap:11px;margin:0 0 39px}
+.work-package-jumps a{display:inline-block;background:#edf5fb;border:1px solid #cadce9;color:#1d5c89;text-decoration:none;border-radius:3px;padding:9px 14px;font-size:12px;font-weight:750}
+.work-package-jumps a:hover{background:#dbeefa}
+.research-package-group{margin:0 0 56px;scroll-margin-top:110px}
+.research-package-header{display:flex;gap:20px;align-items:flex-end;justify-content:space-between;border-bottom:2px solid #d9e7f2;padding-bottom:19px;margin-bottom:18px}
+.research-package-header h3{color:var(--navy);font-size:clamp(23px,2.7vw,31px);line-height:1.25;letter-spacing:-.027em;margin:0 0 8px}
+.research-package-header p{color:var(--muted);font-size:13.5px;line-height:1.75;margin:0;max-width:780px}
+.group-top-link{color:#3c769d;white-space:nowrap;font-weight:700;font-size:11px;text-decoration:none}
+.task-list{display:grid;gap:11px}
+.task-card{border:1px solid var(--line);background:#fff;border-radius:4px;overflow:hidden;box-shadow:0 3px 15px rgba(22,57,86,.025)}
+.task-card summary{list-style:none;cursor:pointer;display:grid;grid-template-columns:72px minmax(0,1fr) 100px 18px;align-items:center;gap:16px;padding:21px 23px}
+.task-card summary::-webkit-details-marker{display:none}
+.task-card summary:hover{background:#f7fbfe}
+.task-num{font-size:12px;color:#246c9f;font-weight:850;letter-spacing:.04em}
+.task-main{min-width:0;display:flex;flex-direction:column;gap:6px}
+.task-main strong{font-size:16px;line-height:1.36;color:var(--navy)}
+.task-main>span{font-size:12.5px;line-height:1.65;color:#5e7383}
+.task-month{font-size:12px;font-weight:760;color:#507792;white-space:nowrap;text-align:right}
+.task-toggle{font-size:23px;font-weight:400;line-height:1;color:#477da3;text-align:right}
+.task-card[open]{border-color:#b6d2e5}
+.task-card[open] summary{background:#f5f9fc}
+.task-card[open] .task-toggle{font-size:0}
+.task-card[open] .task-toggle:after{content:'−';font-size:23px}
+.task-details{border-top:1px solid #e1eaf2;padding:17px 23px 22px 111px;color:#536b7b;font-size:13px;line-height:1.65}
+.task-detail-heading{margin:0 0 11px;font-size:11px;text-transform:uppercase;font-weight:850;letter-spacing:.08em;color:#3277a5}
+.subtask-list{list-style:none;padding:0;margin:0;display:grid;gap:9px}
+.subtask-list li{display:grid;grid-template-columns:80px 76px minmax(0,1fr);gap:15px;padding:8px 0;border-bottom:1px solid #edf2f6;align-items:baseline}
+.subtask-list li:last-child{border-bottom:0}
+.subtask-id{font-weight:760;color:#1d608f;white-space:nowrap}
+.subtask-time{font-size:11px;color:#7a91a2;font-weight:700;white-space:nowrap}
+.satellite-hardware-note{display:grid;grid-template-columns:52px 1fr;gap:16px;background:#f0f7fd;border:1px solid #bbd5e6;border-left:4px solid #2978ad;border-radius:4px;padding:24px 23px;margin:0 0 22px}
+.hardware-icon{height:44px;width:44px;border-radius:4px;background:#d8eaf7;display:grid;place-items:center;color:#145a8a}
+.hardware-icon .icon{width:26px;height:26px}
+.research-eyebrow{font-size:10px;font-weight:850;letter-spacing:.09em;color:#3777a0;text-transform:uppercase}
+.satellite-hardware-note h4{font-size:20px;line-height:1.35;color:var(--navy);letter-spacing:-.02em;margin:5px 0 9px}
+.satellite-hardware-note p{font-size:13.5px;color:#496579;line-height:1.8;margin:0}
+.research-notice{font-size:12.5px;line-height:1.8;color:#5a6f80;border-top:1px solid var(--line);padding:17px 0}
+.research-notice a{font-weight:750}
+@media(max-width:720px){
+ .research-package-header{align-items:start;flex-direction:column;gap:8px}
+ .task-card summary{grid-template-columns:52px minmax(0,1fr) 19px;gap:10px;padding:18px 13px}
+ .task-month{grid-column:2;text-align:left;grid-row:2;margin-top:-4px}
+ .task-toggle{grid-column:3;grid-row:1 / span 2}
+ .task-num{align-self:start;padding-top:2px}
+ .task-details{padding:15px 13px 19px}
+ .subtask-list li{grid-template-columns:66px minmax(0,1fr);column-gap:11px;row-gap:3px;align-items:start}
+ .subtask-id{grid-column:1;grid-row:1}
+ .subtask-time{grid-column:1;grid-row:2}
+ .subtask-list li>span:last-child{grid-column:2;grid-row:1 / span 2}
+ .satellite-hardware-note{grid-template-columns:1fr;padding:18px}
+ .satellite-hardware-note h4{font-size:18px}
+}
+
+/* Core technical directions: grouping and anchors */
+.core-directions-section{background:#fff}
+.direction-group{margin:0 0 42px;scroll-margin-top:110px}
+.direction-group-heading{display:flex;gap:16px;align-items:center;padding-bottom:17px;margin-bottom:20px;border-bottom:1px solid var(--line)}
+.direction-group-letter{display:flex;align-items:center;justify-content:center;flex:0 0 48px;width:48px;height:48px;background:#eaf3fa;color:#225b84;font-size:19px;font-weight:800;border-radius:5px}
+.direction-group-heading h3{color:var(--navy);font-size:23px;line-height:1.35;margin:0 0 5px;letter-spacing:-.025em}
+.direction-group-heading p{font-size:13.5px;color:var(--muted);line-height:1.55;margin:0}
+.directions-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.direction-card{min-width:0;display:flex;align-items:flex-start;gap:17px;border:1px solid var(--line);border-top:3px solid #6d9fbe;border-radius:4px;background:#fff;padding:21px 22px;box-shadow:0 3px 10px rgba(15,54,88,.03);scroll-margin-top:110px}
+.direction-id{display:flex;align-items:center;justify-content:center;flex:0 0 41px;width:41px;height:41px;background:#f0f6fa;color:#2670a2;font-weight:800;font-size:13px;border-radius:4px}
+.direction-content{flex:1;min-width:0}
+.direction-content h4{font-size:17px;line-height:1.36;color:var(--navy);margin:1px 0 9px;letter-spacing:-.012em}
+.direction-content p{font-size:13px;line-height:1.76;color:var(--muted);margin:0 0 13px}
+.direction-tasks{display:flex;align-items:center;flex-wrap:wrap;gap:6px}
+.direction-tasks a{font-size:11px;font-weight:750;line-height:1.3;background:#eef5fb;border:1px solid #d6e6f2;border-radius:3px;padding:4px 7px;color:#286994;text-decoration:none}
+.direction-tasks a:hover{background:#dcebf6;text-decoration:underline}
+.directions-footnote{border-left:3px solid #80abc6;background:#f4f8fb;padding:14px 18px;font-size:12.5px;color:var(--muted);line-height:1.7}
+.directions-footnote a{font-weight:750}
+.home-core-section{padding-top:66px;padding-bottom:66px}
+.home-core-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:13px}
+.home-core-card{border:1px solid var(--line);border-radius:4px;background:#fff;display:grid;grid-template-columns:35px 1fr auto;align-items:center;gap:10px;padding:19px 14px;color:var(--navy);text-decoration:none;transition:background .15s,border-color .15s}
+.home-core-card:hover{background:#f5f9fd;border-color:#94b5cf}
+.home-core-card>span{font-size:12px;font-weight:800;color:#2c76a7}
+.home-core-card strong{font-size:13.5px;line-height:1.35}
+.home-core-card .icon{width:16px;height:16px;color:#6591b0}
+@media(max-width:900px){.home-core-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:690px){.directions-grid,.home-core-grid{grid-template-columns:1fr}.direction-group-heading{align-items:flex-start}.direction-group-heading h3{font-size:20px}.direction-card{padding:17px;gap:12px}.direction-content h4{font-size:16px}}
+
+
+/* Technical directions present enabling capabilities; application scenarios are on the Use Cases page. */
+
+/* Satellite and UAV technology cards share equal prominence in Group C. */
+@media(min-width:1160px){
+  .direction-group--platform .directions-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .direction-group--platform .direction-card{padding:19px 17px;gap:12px}
+  .direction-group--platform .direction-id{flex-basis:38px;width:38px;height:38px}
+  .direction-group--platform .direction-content h4{font-size:16px}
+}
+@media(min-width:691px) and (max-width:1159px){
+  .direction-group--platform .direction-card:last-child{grid-column:1 / -1}
+}
