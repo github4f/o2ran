@@ -2,6 +2,18 @@
 <meta name="theme-color" content="#123659"/><meta name="description" content="O²-RAN NSF VINES academic research consortium: NTN-aware O-RAN architecture, distributed edge intelligence and 36-month demonstration roadmap."/><title>Orbital Open RAN Research Consortium | O²-RAN</title>
 <link rel="icon" type="image/svg+xml" href="assets/favicon.svg"/><link rel="stylesheet" href="styles.css"/>
 <link rel="stylesheet" href="site-pages.css"/>
+<style>
+/* Homepage consortium preview. Self-contained so only index.html needs replacing. */
+.home-consortium{gap:24px;padding:28px 32px;background:#f6fbfe;align-items:center}
+.home-consortium .home-consortium-icon{flex:0 0 66px;width:66px;height:66px;display:flex;align-items:center;justify-content:center;color:#2475a9;background:#e6f3fb;border:1px solid #d3e5f1;border-radius:12px}
+.home-consortium-icon .icon{width:36px;height:36px;fill:none;stroke:currentColor;stroke-width:1.55;stroke-linecap:round;stroke-linejoin:round}
+.home-consortium .home-consortium-copy{flex:1;min-width:0}
+.home-consortium h3{font-size:24px;line-height:1.26;margin:0 0 8px}
+.home-consortium p{font-size:14px;line-height:1.75;max-width:725px;margin:0}
+.home-consortium .home-consortium-link{white-space:nowrap;flex-shrink:0;align-self:center}
+@media(max-width:1000px){.home-consortium{flex-wrap:wrap}.home-consortium .home-consortium-link{margin-left:90px}}
+@media(max-width:720px){.home-consortium{padding:22px;gap:14px}.home-consortium .home-consortium-icon{display:none}.home-consortium .home-consortium-copy{flex:1 1 100%}.home-consortium h3{font-size:21px}.home-consortium p{font-size:13.5px}.home-consortium .home-consortium-link{margin-left:0;white-space:normal}}
+</style>
 <script src="script.js" defer></script></head><body><a class="skip-link" href="#main">Skip to main content</a><svg aria-hidden="true" class="svg-definitions" height="0" width="0" xmlns="http://www.w3.org/2000/svg">
 <symbol id="i-arrow" viewbox="0 0 24 24"><path d="M5 12h14m-7-7 7 7-7 7"></path></symbol>
 <symbol id="i-arrow-up" viewbox="0 0 24 24"><path d="M6 18 18 6M7 6h11v11"></path></symbol>
@@ -72,7 +84,15 @@
 <section class="section section-soft"><div class="container"><div class="section-heading"><div><span class="section-kicker">DEMONSTRATION ROADMAP</span><h2>Six planned milestones</h2></div><p>A phased path from architecture validation to integrated space–air–ground demonstration.</p></div><div class="demo-notice"><svg class="icon"><use href="#i-calendar"/></svg>Project-relative months (M6–M36). Locations, configurations and schedules are planned and subject to coordination.</div><div aria-label="Demonstration months" class="demo-month-track">
 <div><span>M6</span><strong>Architecture</strong></div><div><span>M11</span><strong>Emulation</strong></div><div><span>M18</span><strong>Closed Loop</strong></div><div><span>M23</span><strong>HIL</strong></div><div><span>M30</span><strong>UAV Field</strong></div><div><span>M36</span><strong>Integrated NTN</strong></div>
 </div><div class="demo-teasers"><div><b>Early validation</b><p>Architecture, NTN emulation and RIC control (M6–M18)</p></div><div><b>System integration</b><p>Hardware-in-the-loop, UAV field trials and at-scale NTN integration (M23–M36)</p></div></div><div class="section-action"><a class="text-link" href="demonstrations.html">Full demonstration schedule <svg class="icon"><use href="#i-arrow"/></svg></a></div></div></section>
-<section class="section"><div class="container"><div class="section-heading"><div><span class="section-kicker">RESEARCH CONSORTIUM</span><h2>Team &amp; Partners</h2></div><p>Interdisciplinary collaboration with academic and industry researchers.</p></div><div class="home-lead"><img src="assets/team/firouzi.png" alt="Farshad Firouzi" loading="lazy"/><div><span class="section-kicker">PROJECT LEADERSHIP</span><h3>Farshad Firouzi</h3><strong>Project Lead &amp; Principal Investigator</strong><p>Johns Hopkins University</p><a class="text-link" href="team.html">Meet the full team <svg class="icon"><use href="#i-arrow"/></svg></a></div><img class="home-lead-logo" src="assets/team/jhu.png" alt="Johns Hopkins University" loading="lazy"/></div>
+<section class="section"><div class="container"><div class="section-heading"><div><span class="section-kicker">RESEARCH CONSORTIUM</span><h2>Team &amp; Partners</h2></div><p>Interdisciplinary collaboration with academic and industry researchers.</p></div><div class="home-lead home-consortium">
+  <div class="home-consortium-icon" aria-hidden="true"><svg class="icon"><use href="#i-network"/></svg></div>
+  <div class="home-consortium-copy">
+    <span class="section-kicker">COLLABORATIVE RESEARCH TEAM</span>
+    <h3>Bringing together complementary expertise</h3>
+    <p>Five academic institutions and four industry partners advancing Open RAN for non-terrestrial networks, distributed edge intelligence, and integrated system demonstrations.</p>
+  </div>
+  <a class="btn btn-primary home-consortium-link" href="team.html">Meet the Team &amp; Partners <svg class="icon"><use href="#i-arrow"/></svg></a>
+</div>
 <div class="home-partners"><p>Academic &amp; industry collaboration</p><div class="home-partner-names"><span>Arizona State University</span><span>Clemson University</span><span>Johns Hopkins University</span><span>UCLA</span><span>University of Michigan</span><span>General Atomics</span><span>Aethero</span><span>Skylark Wireless</span><span>DASH Tech IC</span></div></div></div></section>
 <section class="section section-soft"><div class="container"><div class="section-heading"><div><span class="section-kicker">PROJECT OUTPUTS</span><h2>Publications &amp; Resources</h2></div><p>Peer-reviewed research, open-source tools and datasets will be posted when available.</p></div><div class="card-grid three-col outputs-grid">
 <article><div class="output-icon"><svg class="icon"><use href="#i-file"></use></svg></div><h3>Publications</h3><p>Peer-reviewed papers, technical reports, presentations and research posters.</p><span class="coming-label">Content forthcoming</span></article>
@@ -83,5 +103,5 @@
 </main><footer class="footer"><div class="container footer-grid">
 <div><a href="index.html" class="footer-brand">O<sup>2</sup>-RAN</a><p>Orbital Open RAN for Non-Terrestrial Networks and Space-Based Edge Computing.</p><span class="footer-funding">NSF VINES Research Project</span></div>
 <div><h3>Explore</h3><div class="footer-links"><a href="about.html">About</a><a href="research.html">Research</a><a href="use-cases.html">Use Cases</a><a href="team.html">Team & Partners</a><a href="demonstrations.html">Demonstrations</a><a href="publications.html">Publications</a><a href="contact.html">Contact</a></div></div>
-<div><h3>Project Information</h3><p>Final NSF award number and official funding acknowledgment will be added following confirmation. Project inquiries: <a href="mailto:farshad.firouzi@jhu.edu">farshad.firouzi@jhu.edu</a>.</p><p class="footer-small">Demonstration schedules and anticipated results are plans, not statements of achieved performance.</p></div>
+<div><h3>Project Information</h3><p>Final NSF award number and official funding acknowledgment will be added following confirmation. Project inquiries: <a href="contact.html">Contact the project</a>.</p><p class="footer-small">Demonstration schedules and anticipated results are plans, not statements of achieved performance.</p></div>
 </div><div class="container footer-bottom"><span>© <span id="copyright-year">2026</span> O²-RAN Research Consortium.</span><span>Research · Collaboration · Open Innovation</span></div></footer></body></html>
